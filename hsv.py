@@ -1,3 +1,6 @@
+"""
+This script reads an image and prints the HSV values of each pixel.
+"""
 from PIL import Image
 
 image_path = 'rgb.png'
