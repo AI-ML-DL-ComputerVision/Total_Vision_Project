@@ -1,3 +1,4 @@
 # Total_Vision_Project
 
-what should we do first?
+### Team 1 - 康ner, Tom
+### Team 2 - Krish, Jim, Kevin, Nathan
