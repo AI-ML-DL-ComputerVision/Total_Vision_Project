@@ -1,3 +1,5 @@
 # Total_Vision_Project
 
-what should we do first?
+ideas
+ - harris corner dectection
+ - Shi Tomasi
