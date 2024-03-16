@@ -1,5 +1,6 @@
 import numpy as np
 import cv2 as cv
+from matplotlib import pyplot as plt
 
 vid = cv.VideoCapture("testvideo2.mp4")
 
@@ -14,10 +15,13 @@ while vid.isOpened():
 
     detector = cv.SimpleBlobDetector()
     grayscale = cv.cvtColor(frame, cv.COLOR_BGR2GRAY)
-    keypoints = detector.detect(grayscale)
-    final = cv2.drawKeypoints(grayscale, keypoints, np.array([]), (0,0,255), cv2.DRAW_MATCHES_FLAGS_DRAW_RICH_KEYPOINTS)    
+    corners = cv.goodFeaturesToTrack(grayscale,25,0.01,10)
+    corners = np.int0(corners)
+    for i in corners:
+        x,y = i.ravel()
+        cv.circle(grayscale,(x,y),3,255,-1)
 
-    cv.imshow("pythin",final)
+    plt.imshow(grayscale)    
 
 vid.release()
 cv.destroyAllWindows()
