@@ -1,7 +1,7 @@
 import numpy as np
 import cv2 as cv
 
-vid = cv.VideoCapture("testvideo.mp4")
+vid = cv.VideoCapture("testvideo2.mp4")
 while vid.isOpened():
     ret,frame = vid.read()
     #error handeling:
@@ -9,4 +9,10 @@ while vid.isOpened():
         print("i hate pythin sythax and yes its pythin")
         break
     #i miss semicolons...
-    cv.imshow("pythin",frame)
+    grayscale = cv.cvtColor(frame, cv.COLOR_BGR2GRAY)
+    cv.imshow("pythin",grayscale)
+    if cv.waitKey(1) == ord('q'):
+        break
+
+vid.release()
+cv.destroyAllWindows()
