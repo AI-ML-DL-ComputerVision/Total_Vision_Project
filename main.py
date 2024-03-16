@@ -8,5 +8,5 @@ while vid.isOpen():
     if not ret:
         print("i hate pythin sythax and yes its pythin")
         break
-    #i miss simicolons...
+    #i miss semicolons...
     
