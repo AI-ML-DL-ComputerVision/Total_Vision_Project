@@ -11,8 +11,6 @@ while vid.isOpened():
     #i miss semicolons...
     grayscale = cv.cvtColor(frame, cv.COLOR_BGR2GRAY)
     cv.imshow("pythin",grayscale)
-    if cv.waitKey(1) == ord('q'):
-        break
 
 vid.release()
 cv.destroyAllWindows()
