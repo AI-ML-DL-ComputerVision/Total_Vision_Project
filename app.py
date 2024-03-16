@@ -1,3 +1,4 @@
+# Nathan's initial code to detect purple strips in a video
 import cv2
 import numpy as np
 from scipy.spatial.distance import cdist
