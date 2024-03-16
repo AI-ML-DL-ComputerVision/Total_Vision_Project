@@ -1,5 +1,4 @@
 # Total_Vision_Project
 
-ideas
- - harris corner dectection
- - Shi Tomasi
+### Team 1 - 康ner, Tom
+### Team 2 - Krish, Jim, Kevin, Nathan
